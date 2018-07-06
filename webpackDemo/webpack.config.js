@@ -43,7 +43,6 @@ module.exports = {
     })
   ],
   resolve: {
-    //导入的时候不用写拓展名
     extensions: [" ", ".js", ".json", ".vue", ".scss", ".css"]
   },
   watchOptions: {

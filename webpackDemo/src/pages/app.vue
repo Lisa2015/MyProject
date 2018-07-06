@@ -1,7 +1,6 @@
 <template>
     <section class="main">
-        <h3>我来了{{name}}</h3>
-        <img src="../img/timh(36).jpg" alt="">
+        <h3>{{name}}</h3>
     </section>
 </template>
 
@@ -14,9 +13,3 @@ export default {
   }
 };
 </script>
-
-<style>
-.main > p {
-  color: #00ff;
-}
-</style>
