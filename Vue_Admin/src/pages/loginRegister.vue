@@ -1,7 +1,7 @@
 <template>
 <div class="login-box">
   <div class="topTitle text-center">
-    <h3 style="color:#437daf">菁童网后台管理系统</h3>
+    <h3 style="color:#437daf">后台管理系统</h3>
   </div>
     <div class="login-box-body col-xs-12">
       <div class="alert alert-warning noExsit" role="alert" style="display:none">用户名不存在!</div>
