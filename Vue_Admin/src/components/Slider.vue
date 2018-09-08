@@ -3,7 +3,7 @@
     <section class="sidebar">
       <div class="user-panel " style="padding-bottom:35px;">
             <div class="text-center info">
-              <span style="color:rgb(134, 212, 205)"><strong>菁童网后台管理系统</strong></span>
+              <span style="color:rgb(134, 212, 205)"><strong>后台管理系统</strong></span>
             </div>
           </div>
       <ul data-widget="tree" class="sidebar-menu">
