@@ -1,0 +1,50 @@
+<header>
+  <view>玛莎拉蒂 总裁</view>
+</header>
+<view class="content">
+   <view class="one">
+      <image src="../../asset/img/004.jpg">
+      </image>
+     <text>轻 奢</text>
+   </view>
+  <view class="two">
+     <text>￥</text><text class="price">5,000</text>
+     <view>如果您的车队预算在这个范围上下，我们推荐您选择这款车型</view>
+  </view>
+  <view class="one">
+    <image src="../../asset/img/004.jpg">
+    </image>
+     <text>80%</text>
+  </view>
+  <view class="two">
+    <text>￥</text><text class="price">5,000</text>
+    <view>如果您的车队预算在这个范围上下，我们推荐您选择这款车型</view>
+  </view>
+  <view class="one">
+    <image src="../../asset/img/004.jpg">
+    </image>
+    <text>轻 奢</text>
+  </view>
+  <view class="two">
+    <text>￥</text><text class="price">5,000</text>
+    <view>如果您的车队预算在这个范围上下，我们推荐您选择这款车型</view>
+  </view>
+  <view class="one">
+    <image src="../../asset/img/004.jpg">
+    </image>
+    <text>轻 奢</text>
+  </view>
+  <view class="two">
+    <text>￥</text><text class="price">5,000</text>
+    <view>如果您的车队预算在这个范围上下，我们推荐您选择这款车型</view>
+  </view>
+  <view class="one">
+    <image src="../../asset/img/004.jpg">
+    </image>
+    <text>轻 奢</text>
+  </view>
+  <view class="two">
+    <text>￥</text><text class="price">5,000</text>
+    <view>如果您的车队预算在这个范围上下，我们推荐您选择这款车型</view>
+  </view>
+</view>

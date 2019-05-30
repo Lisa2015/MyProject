@@ -1,0 +1,65 @@
+page {
+    background-color:#fff;
+}
+header .headTitle {
+    font-size: 45rpx;
+    font-weight: bold;
+    margin: 40rpx 20rpx 0rpx 30rpx;
+    display: block;
+    color: #4f4f4f;
+}
+.content {
+    margin-top: 40rpx;
+    font-size: 32rpx;
+}
+.content .contentTips {
+    font-size: 20rpx;
+    color: #909090;
+    padding-left:30rpx;
+}
+.content input{
+    width: 50%;
+    font-size: 28rpx;
+    color: #999;
+}
+.phoneNumber {
+    display: flex;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 20rpx;
+    width: 90%;
+    margin: 35rpx 0rpx 0rpx 30rpx;
+}
+.phoneNumber input {
+    font-size: 25rpx;
+}
+.vaildCode {
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 20rpx;
+    width: 90%;
+    margin: 35rpx 0rpx 0rpx 30rpx;
+}
+.vaildCode input {
+    font-size: 25rpx;
+}
+.phoneNumber text {
+    width: 10%;
+    display: block;
+    line-height: 55rpx;
+    font-size: 30rpx;
+}
+.send-code {
+    border: 1px solid #e17f79;
+    padding: 10rpx;
+    font-size: 25rpx;
+    border-radius: 5%;
+    text-align: center;
+    padding: 15rpx;
+    width: 80rpx;
+}
+.next {
+    width: 90%;
+    background-color: #4c4c4c;
+    color: #fff;
+    margin-top: 70rpx;
+}
+

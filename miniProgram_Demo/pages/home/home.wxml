@@ -1,0 +1,158 @@
+<!-- 页头 -->
+<header>
+     <view class="banner">
+       <swiper indicator-dots="true" indicator-color="#000" indicator-active-color="#fff" autoplay="true" interval="2000" duration="{{duration}}">
+            <block wx:for="{{imageArray}}" wx:key="unique">
+                <swiper-item>
+                    <image src="{{item}}" class="slide-image" />
+                </swiper-item>
+            </block>
+        </swiper>
+     </view>
+     <view class="currentCity">
+       <text>当前城市:</text>
+        <text>上海</text>
+     </view>
+</header>
+<view class="content">
+   <view class="contentTitle">推荐套餐</view>
+    <text class="tips">套餐价格包含车花套餐和正装服务哦</text>
+    <view class="recommandImages">
+        <scroll-view class="image-list" scroll-x="true">
+            <image wx:for="{{recommandImages}}" mode="aspectFill" src="{{item}}"></image>
+                <view class="title">至尊奢华套餐</view>
+            <text>顶级奢华的劳斯莱斯幻影搭配3辆奔驰S级,更可搭配法拉利,
+                兰博基尼登超跑开道,让您享受殿堂级的婚姻体验</text>
+        </scroll-view>
+    </view>
+    <view class="contentTitle" style="padding-top: 10%;font-weight: bold;">自由搭配</view>
+    <view class='tabs' scroll-x>
+        <view class="tab {{currentTab==index ? ' tab-active ' : ' '}}" wx:for="{{tabs}}" wx:key="unique" data-idx="{{index}}" bindtap='switchTab'>
+            <text>{{item}}</text>
+        </view>
+    </view>
+    <view class='tab-contents'>
+        <view class='tab-content' wx:if="{{currentTab==0}}">
+            <scroll-view class="image-list" scroll-x="true" >
+                    <image  mode="aspectFill" src="{{item}}" wx:for="{{recommandImages}}">
+                    </image>
+                <view class="detailsContent">
+                    <text class="carDetail">玛莎拉蒂-总裁</text>
+                    <text class="carIcon">主车</text>
+                    <text class="carDetail">￥3000</text>
+                    <text class="carSpeed">5小时30分</text>
+                    <text class="carSpeed1">50公里</text>
+                    <view class="goDetails" bindtap="goDetails">查看详情</view>
+                </view>
+            </scroll-view>
+        <text class="line"></text>
+            <scroll-view class="image-list" scroll-x="true">
+                <image wx:for="{{recommandImages}}" mode="aspectFill" src="{{item}}">
+                </image>
+                <view class="detailsContent">
+                    <text class="carDetail">玛莎拉蒂-总裁</text>
+                    <text class="carIcon">主车</text>
+                    <text class="carDetail">￥3000</text>
+                    <text class="carSpeed">5小时30分</text>
+                    <text class="carSpeed1">50公里</text>
+                    <view class="goDetails" bindtap="goDetails">查看详情</view>
+                </view>
+            </scroll-view>
+        </view>
+        <view class='tab-content' wx:if="{{currentTab==1}}">
+            <scroll-view class="image-list" scroll-x="true">
+                <image wx:for="{{recommandImages}}" mode="aspectFill" src="{{item}}">
+                </image>
+                <view class="detailsContent">
+                    <text class="carDetail">兰博基尼</text>
+                    <text class="carIcon">主车</text>
+                    <text class="carDetail">￥3000</text>
+                    <text class="carSpeed">5小时30分</text>
+                    <text class="carSpeed1">50公里</text>
+                    <view class="goDetails" bindtap="goDetails">查看详情</view>
+                </view>
+            </scroll-view>
+            <text class="line"></text>
+            <scroll-view class="image-list" scroll-x="true">
+                <image wx:for="{{recommandImages}}" mode="aspectFill" src="{{item}}">
+                </image>
+                <view class="detailsContent">
+                    <text class="carDetail">兰博基尼</text>
+                    <text class="carIcon">主车</text>
+                    <text class="carDetail">￥3000</text>
+                    <text class="carSpeed">5小时30分</text>
+                    <text class="carSpeed1">50公里</text>
+                    <view class="goDetails" bindtap="goDetails">查看详情</view>
+                </view>
+            </scroll-view>
+
+        </view>
+        <view class='tab-content' wx:if="{{currentTab==2}}">
+            <scroll-view class="image-list" scroll-x="true">
+                <image wx:for="{{recommandImages}}" mode="aspectFill" src="{{item}}">
+                </image>
+                <view class="detailsContent">
+                    <text class="carDetail">保时捷</text>
+                    <text class="carIcon">主车</text>
+                    <text class="carDetail">￥3000</text>
+                    <text class="carSpeed">5小时30分</text>
+                    <text class="carSpeed1">50公里</text>
+                    <view class="goDetails" bindtap="goDetails">查看详情</view>
+                </view>
+            </scroll-view>
+            <text class="line"></text>
+            <scroll-view class="image-list" scroll-x="true">
+                <image wx:for="{{recommandImages}}" mode="aspectFill" src="{{item}}">
+                </image>
+                <view class="detailsContent">
+                    <text class="carDetail">保时捷</text>
+                    <text class="carIcon">主车</text>
+                    <text class="carDetail">￥3000</text>
+                    <text class="carSpeed">5小时30分</text>
+                    <text class="carSpeed1">50公里</text>
+                    <view class="goDetails" bindtap="goDetails">查看详情</view>
+                </view>
+            </scroll-view>
+
+        </view>
+        <view class='tab-content' wx:if="{{currentTab==3}}">
+            <scroll-view class="image-list" scroll-x="true">
+                <image wx:for="{{recommandImages}}" mode="aspectFill" src="{{item}}"></image>
+                <view class="detailsContent">
+                    <text class="carDetail">特斯拉X</text>
+                    <text class="carIcon">主车</text>
+                    <text class="carDetail">￥3000</text>
+                    <text class="carSpeed">5小时30分</text>
+                    <text class="carSpeed1">50公里</text>
+                    <view class="goDetails" bindtap="goDetails">查看详情</view>
+                </view>
+            </scroll-view>
+            <text class="line"></text>
+            <scroll-view class="image-list" scroll-x="true">
+                <image wx:for="{{recommandImages}}" mode="aspectFill" src="{{item}}"></image>
+                <view class="detailsContent">
+                    <text class="carDetail">宝马730</text>
+                    <text class="carIcon">主车</text>
+                    <text class="carDetail">￥3000</text>
+                    <text class="carSpeed">5小时30分</text>
+                    <text class="carSpeed1">50公里</text>
+                    <view class="goDetails" bindtap="goDetails">查看详情</view>
+                </view>
+            </scroll-view>
+        </view>
+    </view>
+</view>
+<cover-view class="footer">
+  <cover-view class="currentPackage">
+    当前套餐:
+      <cover-view class="packageList">
+<!--          <cover-view class="carNum">1辆</cover-view>-->
+<!--          <cover-view class="carColor">白色</cover-view>-->
+<!--          <cover-view class="carName">730</cover-view>-->
+      </cover-view>
+  </cover-view>
+  <cover-view class="submit" bindtap="submit">
+      <cover-view style="text-align: center;">￥5400</cover-view>
+     <cover-view class="next">下一步</cover-view>
+  </cover-view>
+</cover-view>

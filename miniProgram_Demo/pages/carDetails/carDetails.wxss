@@ -1,0 +1,47 @@
+ /* pages/cardetails/cardetails.wxss */
+page {
+    background-color:#fff;
+    height: 100vh;
+}
+
+header > view{
+    height: 80rpx;
+    font-size: 38rpx;
+    padding: 30rpx 0rpx 0rpx 80rpx;
+    border-bottom: 1px solid #eeeeee;
+}
+.content image {
+    width: 100%;
+    height: 30vh;
+}
+.content .one {
+    position: relative;
+}
+.content .one  text{
+    font-size: 70rpx;
+    font-weight: bold;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    color: #fff;
+}
+.content .two {
+    background-color: cadetblue;
+    width: 100%;
+    height: 30vh;
+    text-align: center;
+    display: block;
+    position: relative;
+    color: #fff;
+}
+.content .two view {
+    position: absolute;
+    top:65%;
+    font-size:25rpx;
+    left:10%;
+}
+.content .two .price{
+    font-size: 65rpx;
+    font-weight: bold;
+    line-height: 30vh;
+}

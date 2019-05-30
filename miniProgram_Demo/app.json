@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/phone_register/phone_register",
+    "pages/phone_login/phone_login",
+    "pages/myOrders/myOrders",
+    "pages/home/home",
+    "pages/carDetails/carDetails",
+    "pages/payOrder/payOrder",
+    "pages/orderDetails/orderDetails"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

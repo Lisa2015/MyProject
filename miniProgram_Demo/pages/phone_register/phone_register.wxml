@@ -1,0 +1,15 @@
+<header>
+    <text class ="headTitle">绑定手机号</text>
+</header>
+<view class="content">
+    <text class="contentTips">请将您的手机号与此微信号绑定</text>
+    <view class="phoneNumber">
+       <text>+86</text>
+       <input placeholder='输入您的手机号码' type="number" bindinput='inputEdit' data-name='phone'/>
+        <view class="send-code  {{isSend?'cccc':'cff7'}}" style='width:200rpx;' bindtap='sendCode'>{{isSend?'已发送'+time +'S':'发送验证码'}} </view>
+    </view>
+    <view class="vaildCode">
+        <input placeholder='请输入验证码' type="number" bindinput='inputEdit'/>
+    </view>
+    <button class="next">下一步</button>
+</view>

@@ -1,0 +1,68 @@
+<header>
+    <text class="headTitle">我的订单</text>
+</header>
+<view class="content">
+    <view class='tabs' scroll-x>
+        <view class="tab {{currentTab==index ? ' tab-active ' : ' '}}" wx:for="{{tabs}}" wx:key="unique" data-idx="{{index}}" bindtap='switchTab'>
+            <text>{{item}}</text>
+        </view>
+    </view>
+    <view class='tab-contents'>
+        <view class='tab-content' wx:if="{{currentTab==0}}">
+            <view>
+                <view class="orderTitle">2019年5月24号</view>
+                <text>周五 上午9:30</text>
+                <text>5小时30分 50公里</text>
+                <text>等待匹配</text>
+                <view class="goDetails" bindtap="goDetails">点击查看详情</view>
+                <view class="orderImages">
+                    <image class="orderImgTop" wx:for="{{orderImages}}" src="{{item}}"></image>
+                    <image class="orderImgBottom" wx:for="{{orderImages}}" src="{{item}}"></image>
+                </view>
+            </view>
+            <view class="line"></view>
+        </view>
+        <view class='tab-content' wx:if="{{currentTab==1}}">
+            <view>
+                <view class="orderTitle">2019年5月28号</view>
+                <text>周一 上午9:30</text>
+                <text>5小时30分 90公里</text>
+                <text>已支付</text>
+                <view class="goDetails" bindtap="goDetails">点击查看详情</view>
+                <view class="orderImages">
+                    <image class="orderImgTop" wx:for="{{orderImages}}" src="{{item}}"></image>
+                    <image class="orderImgBottom" wx:for="{{orderImages}}" src="{{item}}"></image>
+                </view>
+            </view>
+            <view class="line"></view>
+        </view>
+        <view class='tab-content' wx:if="{{currentTab==2}}">
+            <view>
+                <view class="orderTitle">2019年5月11号</view>
+                <text>周三 上午10:30</text>
+                <text>8小时30分 90公里</text>
+                <text>等待支付</text>
+                <view class="goDetails" bindtap="goDetails">点击查看详情</view>
+                <view class="orderImages">
+                    <image class="orderImgTop" wx:for="{{orderImages}}" src="{{item}}"></image>
+                    <image class="orderImgBottom" wx:for="{{orderImages}}" src="{{item}}"></image>
+                </view>
+            </view>
+            <view class="line"></view>
+        </view>
+        <view class='tab-content' wx:if="{{currentTab==3}}">
+            <view>
+                <view class="orderTitle">2019年5月1号</view>
+                <text>周一 上午07:30</text>
+                <text>4小时30分 90公里</text>
+                <text>已完成</text>
+                <view class="goDetails" bindtap="goDetails">点击查看详情</view>
+                <view class="orderImages">
+                    <image class="orderImgTop" wx:for="{{orderImages}}" src="{{item}}"></image>
+                    <image class="orderImgBottom" wx:for="{{orderImages}}" src="{{item}}"></image>
+                </view>
+            </view>
+            <view class="line"></view>
+        </view>
+    </view>
+</view>

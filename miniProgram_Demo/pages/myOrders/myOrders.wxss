@@ -1,0 +1,85 @@
+page {
+    background-color:#fff;
+}
+.headTitle{
+    display: block;
+    margin-top: 40rpx;
+    font-size: 45rpx;
+    margin-left: 30rpx;
+    font-weight: bold;
+}
+/*header 结束*/
+.tabs {
+    padding: 0rpx 30rpx;
+    font-size: 24rpx;
+    align-items: center;
+    height: 80rpx;
+    background: white;
+    justify-content: space-between;
+    display: flex;
+    border-bottom: 1px solid ghostwhite;
+}
+.content {
+    margin-top: 40rpx;
+    position: relative;
+}
+.tab {
+    width:130rpx;
+    height: 59rpx;
+    /*display: flex;*/
+    text-align: center;
+    line-height: 60rpx;
+    /*height: 100%;*/
+    color: #000;
+}
+
+.tab.tab-active {
+    color: #f0797a;
+    border-bottom: 2rpx solid #f0797a;
+}
+.tab-content {
+    position: relative;
+    padding-left: 30rpx;
+}
+.tab-content .orderTitle {
+    font-size: 30rpx;
+    font-weight: bold;
+}
+.tab-content text {
+    display: block;
+    position: relative;
+}
+.tab-contents {
+    font-size: 25rpx;
+    color: #000;
+}
+.goDetails {
+    height:60rpx;
+    width:160rpx;
+    border:2rpx solid #f0797a;
+    border-radius:8%;
+    font-size:25rpx;
+    text-align:center;
+    line-height:60rpx;
+    color: #f0797a;
+    margin-top: 20rpx;
+}
+.line {
+    height: 2rpx;
+    background-color: #eeeeee;
+    margin-top:45rpx;
+}
+.orderImages .orderImgTop {
+    height:100rpx;
+    width:25%;
+    position:absolute;
+    top:2%;
+    left:70%;
+}
+.orderImages .orderImgBottom {
+    height:100rpx;
+    width:25%;
+    position:absolute;
+    top:55%;
+    left:70%;
+}
