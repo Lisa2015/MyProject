@@ -3,6 +3,6 @@ var router = express.Router();
 var path = require('path');
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.sendFile('index.html', { root: 'public' });
+  res.sendFile('login.html', { root: 'public' });
 });
 module.exports = router;
