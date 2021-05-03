@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-
+use Illuminate\Support\Facades\DB;
 class User extends Authenticatable
 {
     use Notifiable;
@@ -36,5 +36,11 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+//    public function getAvatar($name) {
+//        $uAvatar = DB::table('users')->where('name',$name)->get('avatar');
+//        dd($uAvatar);
+//        return $uAvatar;
+//    }
 
 }
