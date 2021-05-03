@@ -10,6 +10,8 @@
     </div>
 
     <div class="card-body">
+     {{--      表单错误显示--}}
+      @include('shared._errors')
       <form method="POST" action="{{ route('users.store') }}">
         {{ csrf_field() }}
         <div class="form-group">
