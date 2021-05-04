@@ -71,3 +71,14 @@ h1 {
   background-color: #64b9db;
   text-align: center;
 }
+.mrg0px {
+  margin: 0 auto;
+}
+.exitBtn {
+  height: 1.8rem;
+  line-height: 0.5rem;
+}
+
+#exampleCheck1 {
+  margin-left: -1rem;
+}
